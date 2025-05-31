@@ -15,11 +15,11 @@ public class Main {
 
         System.out.println("Digite o saldo da sua conta: ");
         float saldo = scanner.nextFloat();
+        scanner.nextLine();
 
-        scanner.close();
 
-        ContaTerminal contaTerminal = new ContaTerminal(numeroAgencia,agencia,nomecliente,saldo);
+        ContaTerminal contaTerminal = new ContaTerminal(numeroAgencia, agencia, nomecliente, saldo);
 
-        contaTerminal.status();
+        contaTerminal.menu();
     }
 }
